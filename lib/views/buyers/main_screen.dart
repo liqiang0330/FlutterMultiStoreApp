@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({Key? key}) : super(key: key);
@@ -21,8 +22,8 @@ class _MainScreenState extends State<MainScreen> {
             label: 'HOME',
           ),
           BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.home),
-            label: 'HOME',
+            icon: SvgPicture.asset('assets/icons/explore.svg', width: 20,),
+            label: 'CATEGORIES',
           ),
           BottomNavigationBarItem(
             icon: Icon(CupertinoIcons.home),
