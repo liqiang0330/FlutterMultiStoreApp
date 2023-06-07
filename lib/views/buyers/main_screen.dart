@@ -26,16 +26,20 @@ class _MainScreenState extends State<MainScreen> {
             label: 'CATEGORIES',
           ),
           BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.home),
-            label: 'HOME',
+            icon: SvgPicture.asset('assets/icons/shop.svg'),
+            label: 'STORE',
           ),
           BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.home),
-            label: 'HOME',
+            icon: SvgPicture.asset('assets/icons/cart.svg'),
+            label: 'CART',
           ),
           BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.home),
-            label: 'HOME',
+            icon: SvgPicture.asset('assets/icons/search.svg'),
+            label: 'SEARCH',
+          ),
+          BottomNavigationBarItem(
+            icon: SvgPicture.asset('assets/icons/account.svg'),
+            label: 'ACCOUNT',
           ),
         ],
       ),
