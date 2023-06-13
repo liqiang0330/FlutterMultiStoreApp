@@ -16,6 +16,7 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _pageIndex,
         unselectedItemColor: Colors.black,
         selectedItemColor: Colors.yellow.shade900,
         items: [
