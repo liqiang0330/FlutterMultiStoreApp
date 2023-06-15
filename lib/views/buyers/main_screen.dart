@@ -18,7 +18,9 @@ class _MainScreenState extends State<MainScreen> {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _pageIndex,
         onTap: (value) {
-          _pageIndex = value;
+          setState(() {
+            _pageIndex = value;
+          });
         },
         unselectedItemColor: Colors.black,
         selectedItemColor: Colors.yellow.shade900,
