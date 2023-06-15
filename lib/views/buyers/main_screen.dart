@@ -17,6 +17,9 @@ class _MainScreenState extends State<MainScreen> {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _pageIndex,
+        onTap: (value) {
+          _pageIndex = value;
+        },
         unselectedItemColor: Colors.black,
         selectedItemColor: Colors.yellow.shade900,
         items: [
