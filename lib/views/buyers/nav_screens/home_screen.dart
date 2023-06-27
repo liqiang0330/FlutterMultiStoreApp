@@ -5,10 +5,13 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: <Widget>[
-        Text('Hi, what are you looking for?'),
-      ],
+    return Padding(
+      padding: EdgeInsets.only(top: MediaQuery.of(context).padding.top, left: 25, right: 15),
+      child: Row(
+        children: <Widget>[
+          Text('Hi, what are you looking for?'),
+        ],
+      ),
     );
   }
 }
