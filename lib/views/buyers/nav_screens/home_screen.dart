@@ -11,9 +11,9 @@ class HomeScreen extends StatelessWidget {
       child: Row(
         children: <Widget>[
           Text(
-            'Hi, what are you looking for?',
+            'Hi, what are you looking for? 👀',
             style: TextStyle(
-              fontSize: 19,
+              fontSize: 22,
               fontWeight: FontWeight.bold,
             ),
           ),
