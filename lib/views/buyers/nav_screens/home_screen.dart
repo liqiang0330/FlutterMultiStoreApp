@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -9,6 +10,7 @@ class HomeScreen extends StatelessWidget {
       padding: EdgeInsets.only(
           top: MediaQuery.of(context).padding.top, left: 25, right: 15),
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Text(
             'Hi, what are you looking for? 👀',
@@ -16,6 +18,9 @@ class HomeScreen extends StatelessWidget {
               fontSize: 22,
               fontWeight: FontWeight.bold,
             ),
+          ),
+          Container(
+            child: SvgPicture.asset('assets/icons/cart.svg', width: 20,),
           ),
         ],
       ),
