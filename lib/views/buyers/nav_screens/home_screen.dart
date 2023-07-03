@@ -26,6 +26,9 @@ class HomeScreen extends StatelessWidget {
               ),
             ],
           ),
+          TextField(
+            decoration: InputDecoration(hintText: 'Search For Products'),
+          ),
         ],
       ),
     );
