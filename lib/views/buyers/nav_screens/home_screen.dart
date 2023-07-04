@@ -22,12 +22,18 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               Container(
-                child: SvgPicture.asset('assets/icons/cart.svg', width: 20,),
+                child: SvgPicture.asset(
+                  'assets/icons/cart.svg',
+                  width: 20,
+                ),
               ),
             ],
           ),
           TextField(
-            decoration: InputDecoration(hintText: 'Search For Products'),
+            decoration: InputDecoration(
+              hintText: 'Search For Products',
+              border: OutlineInputBorder(),
+            ),
           ),
         ],
       ),
