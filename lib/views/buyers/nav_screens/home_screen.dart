@@ -40,6 +40,10 @@ class HomeScreen extends StatelessWidget {
                 border: OutlineInputBorder(
                   borderSide: BorderSide.none,
                 ),
+                prefixIcon: Padding(
+                  padding: const EdgeInsets.all(14.0),
+                  child: SvgPicture.asset('assets/icons/search.svg', width: 10,),
+                ),
               ),
             ),
           ),
