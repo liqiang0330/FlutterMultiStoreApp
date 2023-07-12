@@ -11,24 +11,7 @@ class HomeScreen extends StatelessWidget {
           top: MediaQuery.of(context).padding.top, left: 25, right: 15),
       child: Column(
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              Text(
-                'Hi, what are you looking for? 👀',
-                style: TextStyle(
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              Container(
-                child: SvgPicture.asset(
-                  'assets/icons/cart.svg',
-                  width: 20,
-                ),
-              ),
-            ],
-          ),
+          WelcomeText(),
           SizedBox(height: 14,),
           ClipRRect(
             borderRadius: BorderRadius.circular(10),
@@ -50,6 +33,34 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+}
+
+class WelcomeText extends StatelessWidget {
+  const WelcomeText({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: <Widget>[
+        Text(
+          'Hi, what are you looking for? 👀',
+          style: TextStyle(
+            fontSize: 22,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        Container(
+          child: SvgPicture.asset(
+            'assets/icons/cart.svg',
+            width: 20,
+          ),
+        ),
+      ],
     );
   }
 }
