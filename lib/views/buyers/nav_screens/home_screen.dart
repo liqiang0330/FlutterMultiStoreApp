@@ -17,15 +17,15 @@ class HomeScreen extends StatelessWidget {
           SizedBox(
             height: 14,
           ),
-          SearchInput(),
+          SearchInputWidget(),
         ],
       ),
     );
   }
 }
 
-class SearchInput extends StatelessWidget {
-  const SearchInput({
+class SearchInputWidget extends StatelessWidget {
+  const SearchInputWidget({
     Key? key,
   }) : super(key: key);
 
