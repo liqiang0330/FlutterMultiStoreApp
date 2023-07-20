@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "620537852245",
+    "project_id": "multi-store-b6df5",
+    "storage_bucket": "multi-store-b6df5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620537852245:android:1ec5cad98d2af89b32ffdc",
+        "android_client_info": {
+          "package_name": "com.benjaminakponasa.multi_store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "620537852245-0rarbaa1enq25nu7qfcf51lv2594ldj4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCt9DDnz-Z0vfyZ1BnxMI7ljf5PBI2PXGE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "620537852245-0rarbaa1enq25nu7qfcf51lv2594ldj4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
