@@ -5,6 +5,9 @@ class BannerWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      height: 140,
+      width: MediaQuery.of(context).size.width,
+    );
   }
 }
