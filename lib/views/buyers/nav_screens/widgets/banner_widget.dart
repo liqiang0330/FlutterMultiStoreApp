@@ -8,6 +8,9 @@ class BannerWidget extends StatelessWidget {
     return Container(
       height: 140,
       width: MediaQuery.of(context).size.width,
+      decoration: BoxDecoration(
+        color: Colors.yellow.shade900,
+      ),
     );
   }
 }

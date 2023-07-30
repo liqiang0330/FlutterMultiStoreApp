@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import './widgets/welcome_text_widget.dart';
 import './widgets/search_input_widget.dart';
+import './widgets/banner_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -19,6 +20,7 @@ class HomeScreen extends StatelessWidget {
             height: 14,
           ),
           SearchInputWidget(),
+          BannerWidget(),
         ],
       ),
     );
