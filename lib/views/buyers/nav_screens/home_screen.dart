@@ -10,19 +10,15 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.only(
-          top: MediaQuery.of(context).padding.top, left: 25, right: 15),
-      child: Column(
-        children: [
-          WelcomeText(),
-          SizedBox(
-            height: 14,
-          ),
-          SearchInputWidget(),
-          BannerWidget(),
-        ],
-      ),
+    return Column(
+      children: [
+        WelcomeText(),
+        SizedBox(
+          height: 14,
+        ),
+        SearchInputWidget(),
+        BannerWidget(),
+      ],
     );
   }
 }
