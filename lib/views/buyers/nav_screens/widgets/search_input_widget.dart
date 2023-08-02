@@ -8,20 +8,23 @@ class SearchInputWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(10),
-      child: TextField(
-        decoration: InputDecoration(
-          // fillColor: Colors.white,
-          fillColor: Colors.grey.shade300,
-          filled: true,
-          hintText: 'Search For Products',
-          border: OutlineInputBorder(
-            borderSide: BorderSide.none,
-          ),
-          prefixIcon: Padding(
-            padding: const EdgeInsets.all(14.0),
-            child: SvgPicture.asset('assets/icons/search.svg', width: 10,),
+    return Padding(
+      padding: const EdgeInsets.all(14.0),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(10),
+        child: TextField(
+          decoration: InputDecoration(
+            // fillColor: Colors.white,
+            fillColor: Colors.grey.shade300,
+            filled: true,
+            hintText: 'Search For Products',
+            border: OutlineInputBorder(
+              borderSide: BorderSide.none,
+            ),
+            prefixIcon: Padding(
+              padding: const EdgeInsets.all(14.0),
+              child: SvgPicture.asset('assets/icons/search.svg', width: 10,),
+            ),
           ),
         ),
       ),
