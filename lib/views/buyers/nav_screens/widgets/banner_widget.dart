@@ -7,7 +7,8 @@ class BannerWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 140,
-      width: MediaQuery.of(context).size.width,
+      // width: MediaQuery.of(context).size.width,
+      width: double.infinity,
       decoration: BoxDecoration(
         color: Colors.yellow.shade900,
       ),
