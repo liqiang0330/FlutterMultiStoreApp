@@ -5,12 +5,16 @@ class BannerWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 140,
-      // width: MediaQuery.of(context).size.width,
-      width: double.infinity,
-      decoration: BoxDecoration(
-        color: Colors.yellow.shade900,
+    return Padding(
+      padding: const EdgeInsets.all(10.0),
+      child: Container(
+        height: 140,
+        // width: MediaQuery.of(context).size.width,
+        width: double.infinity,
+        decoration: BoxDecoration(
+          color: Colors.yellow.shade900,
+          borderRadius: BorderRadius.circular(10),
+        ),
       ),
     );
   }
