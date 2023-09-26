@@ -4,6 +4,10 @@ import 'package:flutter/material.dart';
 class BannerWidget extends StatelessWidget {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
+  getBanners() {
+    return _firestore;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Padding(
