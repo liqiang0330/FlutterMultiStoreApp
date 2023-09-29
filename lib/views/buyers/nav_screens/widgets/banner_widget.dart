@@ -5,7 +5,7 @@ class BannerWidget extends StatelessWidget {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
   getBanners() {
-    return _firestore.collection('banners');
+    return _firestore.collection('banners').get().then((QuerySnapshot querySnapshot) => null,);
   }
 
   @override
